@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div id="page">
+      <div id="inputFields">
+        <div>
+          <p>DAY</p>
+          <input
+            class="field"
+            type="number"
+            name="number"
+            placeholder="DD"
+            id="day"
+            required
+          />
+          <p class="vis" id="dValid">Must be valid</p>
+        </div>
+        <div>
+          <p>MONTH</p>
+          <input
+            class="field"
+            type="number"
+            name="number"
+            placeholder="MM"
+            id="month"
+            required
+          />
+          <p class="vis" id="mValid">Must be valid</p>
+        </div>
+        <div>
+          <p>YEAR</p>
+          <input
+            class="field"
+            type="number"
+            name="number"
+            placeholder="YYYY"
+            id="year"
+            minlength="4"
+            required
+          />
+          <p class="vis" id="yValid">Enter year in past</p>
+        </div>
+      </div>
+      <div style="position: relative">
+        <hr />
+        <button id="btn" onclick="check()"><img src="icon-arrow.svg" "></button>
+      </div>
+      <div>
+        <div class="result">
+          <p id="yl">- -</p>
+          <h1>years</h1>
+        </div>
+        <div class="result">
+          <p id="ml">- -</p>
+          <h1>months</h1>
+        </div>
+        <div class="result">
+          <p id="dl">- -</p>
+          <h1>days</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
